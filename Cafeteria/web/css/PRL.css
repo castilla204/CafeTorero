@@ -1,0 +1,654 @@
+@font-face {
+    font-family: 'fuente1'; 
+    src: url('../fuentes/Raleway/Raleway-Regular.ttf'); 
+  }
+  @font-face {
+    font-family: 'fuente2'; 
+    src: url('../fuentes/Raleway/Raleway-Black.ttf'); 
+  }
+*{
+font-family: 'fuente1';
+text-align: left;
+
+}
+@font-face{
+  font-family: 'fuente1';
+  src: url(../fuentes/Raleway-Regular.ttf);
+}
+@font-face{
+  font-family: 'fuente2';
+  src: url(../fuentes/Raleway-Black.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'fuente1';
+}
+
+/* header */
+header {
+  background-color: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 3%;
+  height: 100px;
+  z-index: 999;
+}
+header .logo {
+  width: 8%;
+  height: 120px;
+}
+
+li a {
+  color: white;
+  padding: 0 1vh;
+}
+li a:hover{
+  color: red;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.item:hover {
+  color: red;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+label {
+  cursor: pointer;
+  display: none;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(156, 29, 29);
+}
+
+  .images {
+    height: 145vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(cafe_630.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* EL MEDIA QUERY DEL HEADER */
+    @media(max-width:600px){
+      .header{
+      background-color: #000000;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 2%;
+      padding-right: 5%;
+      height: 100px;
+      z-index: 999;
+      }
+      .menu{
+          padding: 30px;
+          margin: 0;
+      }
+      header .logo{
+        min-width: 120px;
+      }
+      label{
+      display: initial;
+      }
+      .menu{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: black;
+          display: none;
+      }
+      .item{
+          margin: 0 0 20px 0;
+          width: 100%;
+      }
+      .btn{
+          width: 120px;
+      }
+      #menu:checked ~ .menu{
+          display: initial;
+      }
+      }
+ /* Cuerpo de la pagina*/
+.total{
+    background-image: url(../ZonaComiteEmpresa/imagenes/white_marble.jpg);
+    margin-top: 0%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.contenedor {
+    margin-top: 5%;
+    display: flex;
+    height: 100%;
+    color: rgb(223, 221, 221);
+    width: 100%;
+    
+}
+.stitulo {
+    margin-top: 8%;
+    font-size: 50px;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color:  rgb(39, 0, 0);
+    
+}
+
+
+
+.contenido1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    align-content: center;
+    margin-left: 4%;
+    
+    
+}
+.contenido2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+    border-radius: 15px;
+    
+ 
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    background-color: gainsboro;
+    
+   
+    height: 150px;
+  
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contenidodentro1 {
+    display: flex;
+    
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 15px; 
+  
+    color: black;
+    
+    
+}
+
+.pading{
+    padding: 5%;
+}
+.contenidodentro2 {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    border-radius: 17px;
+    border: 3px solid grey;
+    margin-bottom: 5%;
+
+}
+
+.contenidodentro2 p{
+    margin-left: 5%;
+}
+
+.contenidodentro1 h3 {
+    color: rgb(39, 0, 0);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.contenidodentro2 h3 {
+    color: rgb(39, 0, 0);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.contenidodentro2 h4 {
+    color: black;
+
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Fin cuerpo página*/
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+}
+
+img {
+    height: 50px;
+}
+
+h3 img {
+    height: 100px;
+}
+
+h2 img {
+    height: 100px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    margin-top: 130px;
+  }
+  
+  .columna1{
+    width: 100%;
+  }
+  .columna1 h2{
+    margin-bottom: 2%;
+  }
+  
+  .columna_footer{
+    display: flex; /*para dividir los bloques*/
+    flex-wrap: wrap; /*para el responsive*/
+    justify-content: space-between;/*dejar el mismo espacio entre los elementos*/
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;/*Para el margin de derecha e izq*/
+  
+  }
+  .columna h2{
+    margin-bottom: 3%;
+  }
+  .columna{
+    display: flex;
+    flex-direction: column; /*para poner todo en columna*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    width: 15%;
+  }
+  .columna .text-footer{
+    margin-top: 3%;
+    opacity: 0.8;
+  }
+  .columna a{
+    text-decoration: none; /*quitar el subrayado de los links*/
+    color: rgb(255, 246, 246);
+    margin: 2%;
+    opacity: 0.8;
+  }
+  
+  .fa-brands, .fab {
+    font-weight: 400;
+    margin-right: 4%;
+  }
+  
+  .columna a:hover{ /*para hacer que cuando pases el raton se ponga en opacity y se note cual toques*/
+    font-size: 18px;
+    opacity: 0.5;
+  }
+  
+  .columna img{
+    max-width: 25px;
+    padding-right: 10px; /*espacio entre img y letras*/
+  }
+  
+  .copy hr{
+    margin-top: 1%;
+  }
+  .copy{
+    text-align: center;  /*centrar texto con los titulos*/
+    color: #000000;
+  }
+  .copy p{
+    color: #000000;
+    margin: 15px;
+  }
+  .columna h2{
+    color: #e1e2e6;
+  }
+  .footer-pay{
+    background-color: #e1e2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .pagos{
+    display: flex;
+    margin: 2%;
+  }
+  .pago{
+    margin: 0px 10px;
+  }
+  .download{
+    display: flex;
+  }
+  .google-play{
+    width: 90%;
+    height: 50px;
+    margin: 0px 20px;
+  }
+  .visa , .mastercard, .paypal, .google-pay{
+    width: 90%;
+    height: 40px;
+  }
+  .app-store{
+    width: 70%;
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+  
+    /*Footer*/
+  @media (max-width: 600px) {
+  
+    .columna_footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .columna {
+      width: 60%;
+      text-align: center;
+    }
+    .pagos{
+      display: none;
+    }
+    .copy{
+      display: none;
+    }
+    .download{
+      margin-left: 10%;
+    }
+  }
+  /* Responsive del cuerpo de la pagina*/
+@media(max-width:1340px){
+
+.total{
+    background-image: url(../ZonaComiteEmpresa/imagenes/white_marble.jpg);
+    margin-top: 0%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.contenedor {
+    margin-top: 5%;
+    display: flex;
+    
+    height: 100%;
+    color: rgb(223, 221, 221);
+    width: 100%;
+    
+}
+.stitulo {
+  margin-top: 8%;
+  font-size: 50px;
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  color:  rgb(39, 0, 0);
+}
+
+
+.contenido1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    align-content: center;
+    margin-left: 4%;
+    border-radius: 15px;
+    
+}
+.contenido2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 70%;
+    border-radius: 15px;
+    
+ 
+}
+
+.contenidodentro1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 17px;
+  color: black;
+
+  
+}
+
+
+.titulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    font-size: 15px;
+    background-color: gainsboro;
+    
+   
+    height: 150px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.pading{
+    padding: 5%;
+}
+
+
+.contenidodentro2 {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    border-radius: 17px;
+    border: 3px solid grey;
+    margin-bottom: 5%;
+
+}
+
+.contenidodentro2 p{
+    margin-left: 5%;
+}
+
+.contenidodentro1 h3 {
+    color: rgb(39, 0, 0);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.contenidodentro2 h3 {
+    color: rgb(39, 0, 0);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.contenidodentro2 h4 {
+    color: black;
+
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.video{
+  display: none;
+}
+}
+
+/*media query de los titulos de los riesgos para móviles*/
+@media(max-width:530px){
+  .titulo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    font-size: 13px;
+    background-color: gainsboro;
+    
+   
+    height: 150px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.video{
+  display: none;
+}
+
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="css/sesion.css">
+  <script src="https://kit.fontawesome.com/609f1f1c43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- HEADER -->
+      <header id="header">
+        <img src="IMG/logo.png" alt="fondo_header" class="logo1">
+    <input type="checkbox" id="menu"/>
+    <label for="menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff;" ></i>
+    </label>
+    <ul class="menu">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="shop.html">Shop</a></li>
+        <li class="item"><a href="carrito.html">Cart</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="btn"><a href="iniciosesion.html">Sign in</a></li>
+    </header>
+      <!--  -->
+
+  <div class="contenedor">
+    <div class="izquierda">
+      <h2>SIGN IN</h2>
+      <form>
+        <label for="usuario"></label>User
+        <input type="text" id="usuario" name="usuario" required>
+        <label for="contraseña"></label>Password
+        <input type="password" id="contrasena" name="contraseña" required>
+        <button type="submit" id="botonlogin"><a href="logueados.html">Login</a></button>
+        <a href="registro.html"><p class="botonregistrar">No account yet? Sign up</p></a>
+      </form>
+    </div>
+    <div class="derecha">
+      <img src="IMG/fondologin6.jpg" alt="Logo" class="logo">
+    </div>
+  </div>
+</body>
+</html>
